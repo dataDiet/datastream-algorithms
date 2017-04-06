@@ -137,7 +137,7 @@ def computeHours(second_list):
             sum_of_accesses = sum_of_accesses-second_list[index_left][1]
             index_left += 1
         top_10_list.append((sum_of_accesses, left))
-    return sorted(top_10_list, key=operator.itemgetter(0), reverse=True)[0:min(10, len(top_10_list))]
+    return sorted(top_10_list, key=operator.itemgetter(0), reverse=True)[0:10]
 
 
 def writeDict(path, dict_to_write, opt):
